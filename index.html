@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Duy Anh Nguyen</title>
+<meta name="description" content="Portfolio of Duy Anh Nguyen, Student For International Media and Computer Science at HTW Berlin.">
+<meta name="theme-color" content="#4FA3DD">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- CLOUDS -->
+<div class="sky" aria-hidden="true">
+  <div class="sun"></div>
+  <div class="cloud" style="--top:8%;  --dur:150s; --delay:-12s;  --rest:10vw;"><div class="puff" style="--s:1.25; --o:.95; --blur:4px"></div></div>
+  <div class="cloud" style="--top:19%; --dur:220s; --delay:-90s;  --rest:55vw;"><div class="puff" style="--s:.65;  --o:.7;  --blur:7px"></div></div>
+  <div class="cloud" style="--top:31%; --dur:180s; --delay:-140s; --rest:80vw;"><div class="puff" style="--s:1.6;  --o:.85; --blur:5px"></div></div>
+  <div class="cloud" style="--top:44%; --dur:260s; --delay:-40s;  --rest:25vw;"><div class="puff" style="--s:.9;   --o:.6;  --blur:9px"></div></div>
+  <div class="cloud" style="--top:57%; --dur:190s; --delay:-165s; --rest:92vw;"><div class="puff" style="--s:1.15; --o:.9;  --blur:4px"></div></div>
+  <div class="cloud" style="--top:70%; --dur:240s; --delay:-70s;  --rest:38vw;"><div class="puff" style="--s:.75;  --o:.55; --blur:8px"></div></div>
+  <div class="cloud" style="--top:82%; --dur:170s; --delay:-115s; --rest:68vw;"><div class="puff" style="--s:1.35; --o:.8;  --blur:5px"></div></div>
+</div>
+
+<!-- HEADER -->
+<header class="hud">
+  <div class="hud-in">
+    <div class="hud-side left">
+      <span class="chip"><span class="beacon"></span>duy_nguyen_anh@web.de</span>
+    </div>
+
+    <nav class="pill" aria-label="Main navigation">
+      <a href="#about">about me</a>
+      <a href="#project">projects</a>
+      <a href="#dance">fun fact</a>
+      <a href="#contact">contact</a>
+    </nav>
+
+    <div class="hud-side right">
+      <span class="chip">BLN <b id="clock">--:--:--</b></span>
+      <span class="chip"><b id="prog">0</b>%</span>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO  -->
+  <section class="wrap hero">
+    <div>
+      <p class="hero-eyebrow">International Media and Computer Science · HTW Berlin</p>
+      <h1 class="hero-name"><span>Duy Anh</span><span>Nguyen</span></h1>
+      <p class="hero-line">3D, code and interface design.</p>
+      <div class="cta">
+        <a class="btn btn-solid" href="#project">See the projects</a>
+        <a class="btn btn-ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+
+    <div class="star-stage">
+      <canvas id="star" aria-hidden="true"></canvas>
+    </div>
+
+  </section>
+
+  <div class="wrap">
+
+    <!-- ABOUT ME -->
+    <section class="card reveal" id="about">
+      <p class="eyebrow">About Me</p>
+      <div class="about">
+        <div>
+          <h2 style="margin-bottom:1.5rem">Visual Computing Student</h2>
+          <p>
+          Hey :)
+          I'm Duy Anh Nguyen, 23, based in Berlin. I study International Media and Computer Science at HTW Berlin,
+          a programme that sits between design and engineering. That in-between is where I like to work.
+          </p>
+          <p>
+            My projects run from 3D graphics and software engineering to web development and media management.
+            Different tools, same job: turning an idea into something you can see, click and use.
+            That translation is the part I enjoy most.
+          </p>
+          <p>
+            Every project below taught me something I didn't know before, and most of them broke a few times on the way.
+            This site is no exception: hand-coded, no framework, and the star up top is a thousand particles drawn in real time.
+          </p>
+         </div>
+        <img class="portrait"
+             src="images/Portrait_AboutMe.jpg"
+             alt="Portrait of Duy Anh Nguyen"
+             width="1000" height="500"
+             loading="lazy" decoding="async">
+      </div>
+    </section>
+
+     <!-- PROJECTS -->
+    <section class="hscroll" id="project">
+      <div class="hscroll-track" id="railTrack">
+        <div class="hscroll-stage">
+ 
+          <div class="hscroll-head">
+            <div>
+              <p class="eyebrow">Selected Projects</p>
+              <h2>Proof of Work</h2>
+            </div>
+            <p class="hscroll-hint">Seven projects. Keep scrolling to pan sideways.</p>
+          </div>
+ 
+          <div class="hscroll-rail" id="rail">
+ 
+            <article class="pcard">
+ 
+              <div class="pcard-main">
+                <div class="pcard-intro">
+                  <span class="pcard-no">01</span>
+                  <h3>3D Typewriter Project<br><em>with Autodesk Maya</em></h3>
+                  <p class="pcard-lead"></p>
+                </div>
+ 
+                <figure class="pcard-media">
+                  <div class="media-bar"><i></i><i></i><i></i><span></span></div>
+                  <div class="media-view">
+                    <img src="images/RenderPic_Typewriter.jpg" alt="Render Picture of 3D Typewriter"> 
+                  </div>
+                </figure>
+              </div>
+ 
+              <div class="pcard-detail">
+                <div>
+                  <p class="pcard-label">The work</p>
+                  <p>A detailed typewriter, modelled from scratch. I ran the full production workflow myself:
+                    planning, hard-surface modelling, UV mapping, texturing, lighting and rendering.</p>
+                </div>
+                <div>
+                  <p class="pcard-label">Tools</p>
+                  <div class="project-tags"><span>Autodesk Maya</span></div>
+                  <p class="pcard-year">2023</p>
+                </div>
+              </div>
+ 
+            </article>
+ 
+            <article class="pcard">
+ 
+              <div class="pcard-main">
+                <div class="pcard-intro">
+                  <span class="pcard-no">02</span>
+                  <h3>Software Raytracer<br><em>JavaScript</em></h3>
+                </div>
+ 
+                <figure class="pcard-media">
+                  <div class="media-bar"><i></i><i></i><i></i><span></span></div>
+                  <div class="media-view">
+                    <img src="images/RayTracer.png" alt="Screenshot of Raytracer"> 
+                  </div>
+                </figure>
+              </div>
+ 
+              <div class="pcard-detail">
+                <div>
+                  <p class="pcard-label">The work</p>
+                  <p>A raytracer written in plain JavaScript, no libraries. It handles lighting, shadows, reflections,
+                    transparency and Cook-Torrance shading, plus time-based rendering for animation.</p>
+                </div>
+                <div>
+                  <p class="pcard-label">Tools</p>
+                  <div class="project-tags"><span>JavaScript</span></div>
+                  <p class="pcard-year">2025</p>
+                </div>
+              </div>
+ 
+            </article>
+ 
+            <article class="pcard">
+ 
+              <div class="pcard-main">
+                <div class="pcard-intro">
+                  <span class="pcard-no">03</span>
+                  <h3>Magazine Design<br><em>Photoshop, InDesign &amp; Illustrator</em></h3>
+                </div>
+
+                <figure class="pcard-media is-magazine">
+                  <div class="media-bar"><i></i><i></i><i></i><span></span></div>
+                  <div class="media-view">
+                    <div class="pdfbook" id="mag" data-pages="5" tabindex="0"
+                         role="group" aria-label="Magazine Serenity, 5 pages">
+                      <img id="magImg" src="images/magazine/page-1.jpg"
+                           alt="Serenity magazine, page 1 of 5" decoding="async">
+                      <button class="pdfbook-nav prev" type="button" aria-label="Previous page">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7"/></svg>
+                      </button>
+                      <button class="pdfbook-nav next" type="button" aria-label="Next page">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+                      </button>
+                      <p class="pdfbook-count"><span id="magNow">1</span> / 5</p>
+                    </div>
+                  </div>
+                </figure>
+              </div>
+ 
+              <div class="pcard-detail">
+                <div>
+                  <p class="pcard-label">The work</p>
+                  <p>Designed a multi-page, fashion-inspired magazine spread about my dance group; combining layout design in InDesign, vector graphics in Illustrator, 
+                    and image editing in Photoshop.</p>
+                </div>
+                <div>
+                  <p class="pcard-label">Tools</p>
+                  <div class="project-tags"><span>Photoshop</span><span>InDesign</span><span>Illustrator</span></div>
+                  <p class="pcard-year">2025</p>
+                </div>
+              </div>
+ 
+            </article>
+ 
+            <article class="pcard">
+ 
+              <div class="pcard-main">
+                <div class="pcard-intro">
+                  <span class="pcard-no">04</span>
+                  <h3>Elara Health<br><em>Web Development</em></h3>
+                </div>
+ 
+                <figure class="pcard-media">
+                  <div class="media-bar"><i></i><i></i><i></i><span></span></div>
+                  <div class="media-view">
+                    <img src="images/ElaraHealthPage.png" alt="Screenshot of Website."> 
+                  </div>
+                </figure>
+              </div>
+ 
+              <div class="pcard-detail">
+                <div>
+                  <p class="pcard-label">The work</p>
+                  <p>Developed a full-featured website for Elara Health, focusing on long COVID support. Designed responsive and accessible interfaces using Figma, HTML, and CSS, 
+                    implemented backend functionality with Node.js and SQL.</p>
+                </div>
+                <div>
+                  <p class="pcard-label">Tools</p>
+                  <div class="project-tags"><span>HTML/CSS</span><span>Figma</span><span>Canva</span><span>Node.js</span><span>SQL</span><span>GitHub</span><span>Monday.com</span></div>
+                  <p class="pcard-label"></p>
+                  <p class="pcard-label">Credits</p>
+                  <div class="project-tags">Duy Anh Nguyen, Ha Luu, Luong Hoang, Santiago Badaya, Simona Tröger, Shuvam Kumar Sah, Talha Tayyab</div>
+                  <p class="pcard-year">2024</p>
+                </div>
+              </div>
+ 
+            </article>
+
+            <article class="pcard">
+ 
+              <div class="pcard-main">
+                <div class="pcard-intro">
+                  <span class="pcard-no">05</span>
+                  <h3>3D Customization Project<br><em>Revo Foods</em></h3>
+                </div>
+
+                <figure class="pcard-media">
+                  <div class="media-bar"><i></i><i></i><i></i><span></span></div>
+                  <div class="media-view">
+                    <img src="images/260624_Sommerfest_282.jpg" alt="Revo Foods 3D-printed food.">
+                  </div>
+                </figure>
+              </div>
+ 
+              <div class="pcard-detail">
+                <div>
+                  <p class="pcard-label">The work</p>
+                  <p>Product concepts and 3D shapes for B2B clients at Revo Foods, a food startup in Vienna.
+                    I modelled the shapes and ran the company's own 3D printer for prototyping.</p>
+                </div>
+                <div>
+                  <p class="pcard-label">Tools</p>
+                  <div class="project-tags"><span>Product Development</span><span>Blender</span><span>PrusaSlicer</span><span>Asana</span></div>
+                  <p class="pcard-year">2026</p>
+                </div>
+              </div>
+ 
+            </article>
+
+            <article class="pcard">
+ 
+              <div class="pcard-main">
+                <div class="pcard-intro">
+                  <span class="pcard-no">06</span>
+                  <h3>iOS Application Development<br><em>Swift & SwiftUI</em></h3>
+                </div>
+
+                <figure class="pcard-media">
+                  <div class="media-bar"><i></i><i></i><i></i><span></span></div>
+                  <div class="media-view">
+                    <img src="images/iOSWebDevelopment.png" alt="iOS Applications"> 
+                  </div>
+                </figure>
+              </div>
+ 
+              <div class="pcard-detail">
+                <div>
+                  <p class="pcard-label">The work</p>
+                  <p>A native iOS app built in Swift and SwiftUI: navigation, forms, lists, animations and multitouch gestures, all in Xcode.</p>
+                </div>
+                <div>
+                  <p class="pcard-label">Tools</p>
+                  <div class="project-tags"><span>Swift</span><span>SwiftUI</span><span>Xcode</span></div>
+                  <p class="pcard-label"></p>
+                  <p class="pcard-label">Credits</p>
+                  <div class="project-tags">Duy Anh Nguyen & Ha Luu</div>
+                  <p class="pcard-year">2024</p>
+                </div>
+              </div>
+ 
+            </article>
+
+            <article class="pcard">
+ 
+              <div class="pcard-main">
+                <div class="pcard-intro">
+                  <span class="pcard-no">07</span>
+                  <h3>BitFighters<br><em>Unity</em></h3>
+                </div>
+
+                <figure class="pcard-media">
+                  <div class="media-bar"><i></i><i></i><i></i><span></span></div>
+                  <div class="media-view">
+                    <img src="images/BitFighters.png" alt="Screenshot of the BitFighters"> 
+                  </div>
+                </figure>
+              </div>
+ 
+              <div class="pcard-detail">
+                <div>
+                  <p class="pcard-label">The work</p>
+                  <p>A complete game built in Unity, from first prototype to playable build.
+                    Most of the work was the unglamorous half: testing, fixing and rebuilding until it held together.</p>
+                </div>
+                <div>
+                  <p class="pcard-label">Tools</p>
+                  <div class="project-tags"><span>Unity</span><span>WebGL</span><span>Figma</span><span>GitHub</span></div>
+                  <p class="pcard-label"></p>
+                  <p class="pcard-label">Credits</p>
+                  <div class="project-tags">Duy Anh Nguyen, Ha Luu, Jenny Phuong Anh Nguyen, Rudolfs Spridis</div>
+                  <p class="pcard-year">2024</p>
+                </div>
+              </div>
+ 
+            </article>
+
+            <div class="rail-end" aria-hidden="true"></div>
+          </div>
+ 
+          <div class="hscroll-meter" aria-hidden="true"><span id="railBar"></span></div>
+ 
+        </div>
+      </div>
+    </section>
+
+    <!-- TOOLS -->
+    <section class="card reveal">
+      <p class="eyebrow">Tools</p>
+      <ul class="tools">
+        <li>Java</li><li>JavaScript</li><li>HTML/CSS</li><li>WebGL/GLSL</li><li>Python</li><li>Swift</li><li>React/Node.js</li>
+        <li>SQL</li><li>GitHub</li><li>Visual Studio Code</li><li>IntelliJ</li><li>Xcode</li><li>Adobe Photoshop</li><li>Adobe InDesign</li><li>Adobe Illustrator</li><li>Adobe Premiere</li>
+        <li>Blender</li><li>Autodesk Maya</li><li>Unity</li><li>ImageJ</li><li>Figma</li><li>Canva</li>
+        <li>Slack</li><li>Monday.com</li><li>Asana</li><li>Workday</li><li>Microsoft Office</li>
+      </ul>
+    </section>
+
+    <!-- FUN FACT  -->
+<section class="card reveal" id="dance">
+  <p class="eyebrow">Fun Fact</p>
+
+  <div class="about about-flip">
+
+    <div class="video-stack">
+      <div class="video">
+        <iframe src="https://www.youtube-nocookie.com/embed/0YUIBBGjRcA"
+                title="Dance performance" loading="lazy" allowfullscreen
+                allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture"></iframe>
+      </div>
+      <div class="video">
+        <iframe src="https://www.youtube-nocookie.com/embed/pGV2DQXG_lM"
+                title="Music video" loading="lazy" allowfullscreen
+                allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture"></iframe>
+      </div>
+    </div>
+
+    <div>
+      <h2 style="margin-bottom:1.5rem">Passion For Dancing</h2>
+      <p>In 2025 I competed on season 20 of America's Got Talent with my crew Team Recycled, and we made it to the finale.
+          Performing on that stage, alongside Ciara, is still the biggest thing I have done in dance.</p>
+      <p>Alongside my studies I dance freelance: live shows, events and creative productions.
+        The work is collaboration, with choreographers, artists and other dancers, to get a concept from an idea onto a stage.</p>
+      <p>Freelancing taught me the other half of it: managing my own projects, coordinating schedules
+        and being accountable for what I commit to. That part transfers to everything else I do.</p>
+    </div>
+
+  </div>
+</section>
+
+    <!-- CONTACT -->
+    <section class="card reveal" id="contact">
+      <img class="contact-portrait" src="images/Portrait_Contact.jpg" alt="Duy Anh Nguyen" loading="lazy" decoding="async">
+      <p class="eyebrow">Contact</p>
+      <h2>Let's Get In Touch!</h2>
+      <p class="contact-lead"> For working student roles, project work, or if you just want to know how something here was built.</p>
+      <ul class="contact-list">
+        <li><a href="mailto:duy_nguyen_anh@web.de">Email <em>duy_nguyen_anh@web.de</em></a></li>
+        <li><a href="https://www.linkedin.com/in/duyxanh/" target="_blank" rel="noopener noreferrer">LinkedIn 
+        <em>linkedin.com/in/duyxanh</em></a></li>
+        <li><a href="https://github.com/duyxanh/duyxanh" target="_blank" rel="noopener noreferrer">GitHub <em>github.com/duyxanh</em></a></li>
+        <li><a href="https://www.instagram.com/duyxanh/?hl=de" target="_blank" rel="noopener noreferrer">Instagram 
+        <em>instagram.com/duyxanh</em></a></li>
+      </ul>
+    </section>
+
+    <footer class="foot">
+      <span>© 2026 DUY ANH NGUYEN · ALL RIGHTS RESERVED</span>
+    </footer>
+  </div>
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
